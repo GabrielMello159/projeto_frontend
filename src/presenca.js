@@ -67,10 +67,10 @@ async function registrarPresenca() {
   if (response.ok) alert("Presença registrada!");
   else alert("Erro ao registrar presença.");
 
-<<<<<<< HEAD
+
   obterPresencas(); 
 }
-=======
+
   await obterPresencas(); 
 };
 
@@ -88,7 +88,6 @@ async function registrarPresenca() {
 
   await obterPresencas(); 
 
->>>>>>> 36974ebf3bdeee6233ef7e0896eeb258442ccbb3
 
 async function obterPresencas() {
   const token = localStorage.getItem("token");
