@@ -10,12 +10,12 @@ Servido por Nginx via Docker.
 
 ```bash
 frontend/
-│
 ├── Dockerfile
-├── index.html
+├── index.html          ← página inicial/menu principal
+├── login.html          ← página de login
+├── presenca.html       ← página de registrar/listar presença
 └── src/
-    └── presenca.js
-
+    └── presenca.js     ← funções JS para login, registrar e listar presença
 ```
 
 🚀 Como Rodar o Frontend

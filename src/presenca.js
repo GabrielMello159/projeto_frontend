@@ -1,4 +1,4 @@
-const dominio = "http://localhost:3000";
+const dominio = "https://presenca-faculdade-api.azurewebsites.net";
 
 async function login() {
   const email = document.getElementById("email").value;
@@ -13,6 +13,8 @@ async function login() {
   const data = await response.json();
   localStorage.setItem("token", data.token);
   alert("Login realizado com sucesso!");
+  window.location.href = "presenca.html";
+
 }
 
 async function registrarPresenca() {
