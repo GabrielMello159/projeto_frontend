@@ -40,7 +40,7 @@ async function registrarPresenca() {
   if (response.ok) alert("Presença registrada!");
   else alert("Erro ao registrar presença.");
 
-  await obterPresencas(); // Atualiza tabela
+  await obterPresencas(); 
 };
 
   const response = await fetch(`${dominio}/presenca`, {
@@ -55,7 +55,7 @@ async function registrarPresenca() {
   if (response.ok) alert("Presença registrada!");
   else alert("Erro ao registrar presença.");
 
-  await obterPresencas(); // Atualiza tabela
+  await obterPresencas(); 
 
 
 async function obterPresencas() {
