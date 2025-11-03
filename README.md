@@ -91,11 +91,13 @@ As presenças são listadas dinamicamente via tabela.
 
 ## 🔗 Integração com o Backend
 
-| Ação | Endpoint | Método HTTP |
-| :--- | :--- | :--- |
-| Login | `/auth/login` | `POST` |
-| Listar Presenças | `/presenca` | `GET` |
-| Criar Presença | `/presenca` | `POST` |
+| Ação             | Endpoint       | Método HTTP |
+| :--------------- | :------------ | :---------- |
+| Login            | `/auth/login`  | `POST`      |
+| Listar Presenças | `/presenca`    | `GET`       |
+| Criar Presença   | `/presenca`    | `POST`      |
+| Deletar Presença | `/presenca/:id`| `DELETE`    |
+
 
 💻 Autor:
 
