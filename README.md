@@ -94,7 +94,7 @@ As presenças são listadas dinamicamente via tabela.
 
 ## 🔗 Integração com o Backend
 
-<<<<<<< HEAD
+
 | Método | Endpoint        | Descrição                     |
 | :----- | :------------- | :---------------------------- |
 | POST   | `/auth/register`| Cria um novo usuário          |
@@ -110,7 +110,6 @@ As presenças são listadas dinamicamente via tabela.
 | Criar Presença   | `/presenca`    | `POST`      |
 | Deletar Presença | `/presenca/:id`| `DELETE`    |
 
->>>>>>> 36974ebf3bdeee6233ef7e0896eeb258442ccbb3
 
 💻 Autor:
 
