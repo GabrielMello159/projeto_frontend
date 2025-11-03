@@ -11,11 +11,12 @@ Servido por Nginx via Docker.
 ```bash
 frontend/
 ├── Dockerfile
-├── index.html          ← página inicial/menu principal
-├── login.html          ← página de login
-├── presenca.html       ← página de registrar/listar presença
+├── index.html
+├── login.html
+├── presenca.html
+├── register.html
 └── src/
-    └── presenca.js     ← funções JS para login, registrar e listar presença
+    └── presenca.js
 ```
 
 🚀 Como Rodar o Frontend
@@ -36,6 +37,8 @@ docker run -d -p 8080:80 presenca-frontend
 ```
 
 🌐 Acesse: http://localhost:8080
+
+🌐 Acesse: https://faculdade-tech.azurewebsites.net/
 
 ⚙️ Configuração da Conexão
 
@@ -91,11 +94,13 @@ As presenças são listadas dinamicamente via tabela.
 
 ## 🔗 Integração com o Backend
 
-| Ação | Endpoint | Método HTTP |
-| :--- | :--- | :--- |
-| Login | `/auth/login` | `POST` |
-| Listar Presenças | `/presenca` | `GET` |
-| Criar Presença | `/presenca` | `POST` |
+| Método | Endpoint        | Descrição                     |
+| :----- | :------------- | :---------------------------- |
+| POST   | `/auth/register`| Cria um novo usuário          |
+| POST   | `/auth/login`   | Faz login e retorna token JWT |
+| GET    | `/presenca`     | Lista todas as presenças      |
+| POST   | `/presenca`     | Cria uma nova presença        |
+| DELETE | `/presenca/:id` | Deleta uma presença pelo ID   |
 
 💻 Autor:
 
