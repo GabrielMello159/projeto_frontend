@@ -67,8 +67,28 @@ async function registrarPresenca() {
   if (response.ok) alert("Presença registrada!");
   else alert("Erro ao registrar presença.");
 
+<<<<<<< HEAD
   obterPresencas(); 
 }
+=======
+  await obterPresencas(); 
+};
+
+  const response = await fetch(`${dominio}/presenca`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify(presenca)
+  });
+
+  if (response.ok) alert("Presença registrada!");
+  else alert("Erro ao registrar presença.");
+
+  await obterPresencas(); 
+
+>>>>>>> 36974ebf3bdeee6233ef7e0896eeb258442ccbb3
 
 async function obterPresencas() {
   const token = localStorage.getItem("token");
